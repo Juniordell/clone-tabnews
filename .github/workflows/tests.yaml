@@ -5,7 +5,7 @@ on: pull_request
 jobs:
   jest:
     name: Jest Ubuntu
-    runs-on: ubuntu-lasted
+    runs-on: ubuntu-lastet
     steps:
       - uses: actions/checkout@v4
 
