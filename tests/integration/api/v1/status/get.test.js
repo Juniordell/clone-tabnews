@@ -23,10 +23,3 @@ test("GET to /api/v1/status should return 200", async () => {
   const usedConnections = responseBody.dependencies.database.used_connections;
   expect(usedConnections).toEqual(1);
 });
-
-// test.only("GET to /api/v1/status should return 200", async () => {
-//   await fetch("http://localhost:3000/api/v1/status?database_name=local_db");
-//   await fetch(
-//     "http://localhost:3000/api/v1/status?database_name='; SELECT pg_sleep(4); --",
-//   );
-// });
